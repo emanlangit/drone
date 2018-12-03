@@ -13,13 +13,16 @@ public class Drone {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String title;
-	
+
 	public Drone(Long id, String title) {
 		super();
 		this.id = id;
 		this.title = title;
 	}
-	
+
+	public Drone() {
+	}
+
 	public Long getId() {
 		return id;
 	}
